@@ -7,9 +7,7 @@ export function addDay (resort, date, powder=false, backcountry=false) {
   }
 }
 
-export const removeDay = (date) => {
-  return  {
+export const removeDay = (date) => ({
     type: C.REMOVE_DAY,
     payload: date
-  }
-}
+})
