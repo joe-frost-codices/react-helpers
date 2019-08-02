@@ -1,0 +1,12 @@
+import StoreFactory from "./store"
+import { addDay, removeDay, setGoal } from "./actions"
+
+const store = storeFactory()
+
+store.dispath(
+  addDay("Heavenly", "2016-12-22")
+)
+
+store.dispatch(
+  removeDay("2016-12-22")
+)
